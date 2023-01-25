@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.smiley {
+    width: 40px;
+    height: 40px;
+    background-image: url('./smiley.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.timer {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.lives {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.board {
+    position: absolute;
+    top: 200px;
+    left: 55px;
+    width: 350px;
+    height: 160px;
+    background-color: rgb(96, 220, 170);
+    text-align: center;
+  }
+
+.cell {
+    width: 10x;
+    height: 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cell.shown {
+    background-color: white;
+}
+
+.cell.marked {
+    background-color: yellow;
+}
+
+.choose-level {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.choose-level button {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}

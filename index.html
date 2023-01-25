@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="#">
+        <title>Mine sweeper</title>
+        <link rel="stylesheet" href="css/style.css">
+      </head>
+      <h2>score: <span>0</span></h2>
+    <body onload="onInit()">
+        <div class="header">
+            <div class="smiley" onclick="resetGame()"></div>
+            <div class="timer"></div>
+            <div class="lives"></div>
+        </div>
+        <div class="board"></div>
+        <div class="choose-level">
+            <button onclick="chooseLevel('beginner')">Beginner</button>
+            <button onclick="chooseLevel('medium')">Medium</button>
+            <button onclick="chooseLevel('expert')">Expert</button>
+        </div>
+        <script src="js/game.js"></script>
+    </body>
+    </html>    
